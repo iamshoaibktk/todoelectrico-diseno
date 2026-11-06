@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Compra en una página · Todoeléctrico · Diseño</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Barlow+Semi+Condensed:wght@500;600;700&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,300..600,0..1,0&amp;display=block">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/bundle.css">
+<link rel="stylesheet" href="css/preview.css">
+</head>
+<body>
+<div style="background: var(--surface-sunken); color: var(--ink); font-family: var(--font-text)">
+  <header class="te-on-dark" style="background: var(--surface-inverse); color: var(--ink-inverse)">
+    <div class="te-container" style="display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 68px">
+      <a href="inicio.html" aria-label="Todoeléctrico, inicio"><img src="img/todoelectrico-logo-reverse.png" alt="Todoeléctrico" style="height: 38px; width: auto; display: block"></a>
+      <p style="display: flex; align-items: center; gap: 8px; font: 600 15px/20px var(--font-text)"><span class="te-icon" aria-hidden="true" style="color: var(--accent-inverse)">lock</span>Compra segura</p>
+      <div style="display: flex; align-items: center; gap: 24px; font-size: 14px; color: var(--ink-inverse-muted)">
+        <span>¿Dudas? <strong style="color: var(--ink-inverse)">965 670 786</strong></span>
+        <a class="te-link te-link--inverse" href="carrito.html">Volver al carrito</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="te-container" style="padding-block: 28px 56px">
+    <ol class="te-steps" aria-label="Pasos de la compra" style="max-width: 560px; margin: 0 auto 32px">
+      <li class="te-step is-done"><span class="te-step__dot"><span class="te-icon" aria-hidden="true">check</span></span>Carrito</li>
+      <li class="te-step is-current"><span class="te-step__dot">2</span>Datos, envío y pago</li>
+      <li class="te-step"><span class="te-step__dot">3</span>Confirmación</li>
+    </ol>
+
+    <div style="display: grid; grid-template-columns: minmax(0, 1fr) 420px; gap: 32px; align-items: start">
+      <form style="display: flex; flex-direction: column; gap: 16px; min-width: 0" aria-label="Datos de la compra">
+        <fieldset style="margin: 0; padding: 28px; border: 0; border-radius: 12px; background: var(--surface); display: flex; flex-direction: column; gap: 18px">
+          <legend style="float: left; width: 100%; padding: 0; display: flex; align-items: center; justify-content: space-between; gap: 16px">
+            <span style="display: flex; align-items: center; gap: 12px; font: 700 22px/28px var(--font-display)"><span style="display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: var(--ink); color: var(--ink-inverse); font-size: 15px">1</span>Tus datos</span>
+            <span style="font: 400 14px/20px var(--font-text); color: var(--ink-secondary)">¿Ya eres cliente? <a class="te-link" href="acceso.html">Inicia sesión</a></span>
+          </legend>
+          <div class="te-seg" role="group" aria-label="Tipo de cliente" style="align-self: flex-start"><button type="button" aria-pressed="true">Particular</button><button type="button" aria-pressed="false">Profesional o empresa</button></div>
+          <div class="te-field">
+            <label class="te-field__label" for="co-email">Correo electrónico</label>
+            <input class="te-input" id="co-email" type="email" autocomplete="email" value="laura.gomez@ejemplo.es">
+            <p class="te-field__help">Te enviamos aquí la confirmación y el seguimiento. No hace falta crear una cuenta.</p>
+          </div>
+          <div class="te-form-row">
+            <div class="te-field"><label class="te-field__label" for="co-name">Nombre</label><input class="te-input" id="co-name" type="text" autocomplete="given-name" value="Laura"></div>
+            <div class="te-field"><label class="te-field__label" for="co-last">Apellidos</label><input class="te-input" id="co-last" type="text" autocomplete="family-name" value="Gómez Ruiz"></div>
+          </div>
+          <div class="te-field" style="max-width: calc(50% - 8px)">
+            <label class="te-field__label" for="co-tel">Teléfono</label>
+            <input class="te-input" id="co-tel" type="tel" autocomplete="tel" value="612 345 678">
+            <p class="te-field__help">Solo para el transportista.</p>
+          </div>
+        </fieldset>
+
+        <fieldset style="margin: 0; padding: 28px; border: 0; border-radius: 12px; background: var(--surface); display: flex; flex-direction: column; gap: 18px">
+          <legend style="float: left; width: 100%; padding: 0; display: flex; align-items: center; gap: 12px; font: 700 22px/28px var(--font-display)"><span style="display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: var(--ink); color: var(--ink-inverse); font-size: 15px">2</span>Dirección de envío</legend>
+          <div class="te-field">
+            <label class="te-field__label" for="co-addr">Dirección</label>
+            <input class="te-input" id="co-addr" type="text" autocomplete="address-line1" value="Calle Mayor 14, 2.º B">
+          </div>
+          <div class="te-form-row" style="--fcols: 3">
+            <div class="te-field is-valid"><label class="te-field__label" for="co-cp">Código postal</label><input class="te-input" id="co-cp" type="text" inputmode="numeric" autocomplete="postal-code" value="03690"></div>
+            <div class="te-field"><label class="te-field__label" for="co-city">Población</label><input class="te-input" id="co-city" type="text" autocomplete="address-level2" value="San Vicente del Raspeig"></div>
+            <div class="te-field"><label class="te-field__label" for="co-prov">Provincia</label><select class="te-select" id="co-prov" autocomplete="address-level1"><option>Alicante</option></select></div>
+          </div>
+          <label class="te-switch"><input type="checkbox"> Necesito factura con NIF o CIF</label>
+        </fieldset>
+
+        <fieldset class="te-options" style="margin: 0; padding: 28px; border: 0; border-radius: 12px; background: var(--surface); gap: 10px">
+          <legend style="float: left; width: 100%; margin-bottom: 8px; padding: 0; display: flex; align-items: center; gap: 12px; font: 700 22px/28px var(--font-display)"><span style="display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: var(--ink); color: var(--ink-inverse); font-size: 15px">3</span>Envío</legend>
+          <label class="te-option is-selected"><input type="radio" name="co-ship" checked><span class="te-option__main"><span class="te-option__title">MRW 24–48 h</span><span class="te-option__desc">Entre el mar 10 y el mié 11 de nov.</span></span><span class="te-option__aside">4,85 €</span></label>
+          <label class="te-option"><input type="radio" name="co-ship"><span class="te-option__main"><span class="te-option__title">Correos Express 24–48 h</span><span class="te-option__desc">Entre el mar 10 y el mié 11 de nov.</span></span><span class="te-option__aside">4,95 €</span></label>
+          <label class="te-option"><input type="radio" name="co-ship"><span class="te-option__main"><span class="te-option__title">Recoger en la tienda</span><span class="te-option__desc">Calle Yunque 27, San Vicente del Raspeig · listo mañana desde las 9:00</span></span><span class="te-option__aside te-option__aside--free">Gratis</span></label>
+        </fieldset>
+
+        <fieldset class="te-options" style="margin: 0; padding: 28px; border: 0; border-radius: 12px; background: var(--surface); gap: 10px">
+          <legend style="float: left; width: 100%; margin-bottom: 8px; padding: 0; display: flex; align-items: center; gap: 12px; font: 700 22px/28px var(--font-display)"><span style="display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: var(--ink); color: var(--ink-inverse); font-size: 15px">4</span>Pago</legend>
+          <label class="te-option is-selected"><input type="radio" name="co-pay" checked><span class="te-option__main"><span class="te-option__title">Tarjeta <span class="te-paylogos"><span class="te-paylogo">VISA</span><span class="te-paylogo">Mastercard</span></span></span><span class="te-option__desc">Pago seguro con Redsys. Te pedirá confirmar en la app de tu banco.</span></span><span class="te-option__aside"></span></label>
+          <label class="te-option"><input type="radio" name="co-pay"><span class="te-option__main"><span class="te-option__title">Bizum</span><span class="te-option__desc">Paga con tu móvil, sin tarjeta.</span></span><span class="te-option__aside"></span></label>
+          <label class="te-option"><input type="radio" name="co-pay"><span class="te-option__main"><span class="te-option__title">PayPal</span><span class="te-option__desc">Con recargo de 3,00 € sobre este pedido.</span></span><span class="te-option__aside">+3,00 €</span></label>
+          <label class="te-option"><input type="radio" name="co-pay"><span class="te-option__main"><span class="te-option__title">Paga en 3 plazos con seQura</span><span class="te-option__desc">Primer pago hoy, el resto en los dos meses siguientes.</span></span><span class="te-option__aside"></span></label>
+          <label class="te-option"><input type="radio" name="co-pay"><span class="te-option__main"><span class="te-option__title">Transferencia bancaria</span><span class="te-option__desc">Te enviamos los datos por correo. El pedido sale al recibir el pago.</span></span><span class="te-option__aside"></span></label>
+          <div class="te-field" style="margin-top: 10px">
+            <label class="te-field__label" for="co-notes">Comentarios para el pedido <span class="te-field__opt">(opcional)</span></label>
+            <textarea class="te-textarea" id="co-notes" rows="2" style="min-height: 72px" placeholder="Horario de entrega, indicaciones para el transportista…"></textarea>
+          </div>
+        </fieldset>
+      </form>
+
+      <aside style="position: sticky; top: 24px; display: flex; flex-direction: column; gap: 14px">
+        <section class="te-summary" aria-labelledby="co-sum" style="background: var(--surface)">
+          <div style="display: flex; align-items: baseline; justify-content: space-between"><h2 class="te-summary__title" id="co-sum">Tu pedido</h2><a class="te-link" href="carrito.html" style="font-size: 14px">Editar</a></div>
+          <div>
+            <div class="te-line te-line--compact"><img class="te-line__img" src="img/p-102481.jpg" alt=""><div class="te-line__info"><span class="te-line__name">Gas refrigerante Ralerfresh RS 380 g</span><span class="te-line__meta">1 botella</span></div><div class="te-line__price"><div class="te-price te-price--sm"><span class="te-price__now">38,95 €</span></div></div></div>
+            <div class="te-line te-line--compact"><img class="te-line__img" src="img/p-1365.jpg" alt=""><div class="te-line__info"><span class="te-line__name">Manguera RV-K 3×2,5 mm²</span><span class="te-line__meta">10 m · 1,97 €/m</span></div><div class="te-line__price"><div class="te-price te-price--sm"><span class="te-price__now">19,70 €</span></div></div></div>
+            <div class="te-line te-line--compact" style="border-bottom: 0"><img class="te-line__img" src="img/p-3844.jpg" alt=""><div class="te-line__info"><span class="te-line__name">Arqueta estanca 200×200 mm IP54</span><span class="te-line__meta">1 ud</span></div><div class="te-line__price"><div class="te-price te-price--sm"><span class="te-price__now">9,34 €</span></div></div></div>
+          </div>
+          <dl class="te-summary__rows">
+            <div class="te-summary__row"><dt>Productos (3)</dt><dd>67,99 €</dd></div>
+            <div class="te-summary__row"><dt>Envío MRW</dt><dd>4,85 €</dd></div>
+          </dl>
+          <dl class="te-summary__total"><dt>Total</dt><dd>72,84 €</dd></dl>
+          <p class="te-summary__tax">IVA incluido (12,64 €)</p>
+          <label class="te-check" style="font-size: 14px; line-height: 20px"><input type="checkbox" checked> <span>He leído y acepto las <a class="te-link" href="#">condiciones de venta</a> y la <a class="te-link" href="#">política de privacidad</a>.</span></label>
+          <a class="te-btn te-btn--buy te-btn--lg te-btn--block" href="confirmacion.html"><span class="te-icon" aria-hidden="true">lock</span>Pagar 72,84 €</a>
+          <div style="display: flex; flex-direction: column; gap: 8px">
+            <p class="te-summary__note"><span class="te-icon" aria-hidden="true">verified_user</span>Pago cifrado con Redsys y verificación de tu banco</p>
+            <p class="te-summary__note"><span class="te-icon" aria-hidden="true">assignment_return</span>14 días para devolverlo</p>
+          </div>
+        </section>
+        <p style="display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 14px; color: var(--ink-secondary)"><span class="te-stars" style="--value: 4.4" role="img" aria-label="4,4 de 5 estrellas"></span><strong style="color: var(--ink)">4,4/5</strong> en 5.278 opiniones verificadas</p>
+      </aside>
+    </div>
+  </main>
+
+  <footer style="border-top: 1px solid var(--line); background: var(--surface)">
+    <div class="te-container" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; padding-block: 18px; font-size: 13px; color: var(--ink-muted)">
+      <span>© Todoeléctrico Suministros e Instalaciones S.L. · CIF B54685144</span>
+      <nav aria-label="Legal" style="display: flex; gap: 20px"><a class="te-link te-link--quiet" href="#">Condiciones de venta</a><a class="te-link te-link--quiet" href="#">Envíos y devoluciones</a><a class="te-link te-link--quiet" href="#">Privacidad</a></nav>
+    </div>
+  </footer>
+</div>
+<nav class="pv-pill" aria-label="Navegación del diseño"><a href="index.html"><span class="te-icon" aria-hidden="true">apps</span>Todas las pantallas</a><a href="movil.html#checkout"><span class="te-icon" aria-hidden="true">smartphone</span>Ver en móvil</a></nav>
+</body>
+</html>

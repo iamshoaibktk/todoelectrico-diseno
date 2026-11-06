@@ -1,0 +1,46 @@
+/* Preview chrome for the static design site (not part of the store design) */
+body { margin: 0; }
+a { color: #086bd0; }
+.has-buybar { padding-bottom: 72px; }
+
+.pv-pill { position: fixed; left: 16px; bottom: 16px; z-index: 1000; display: flex; gap: 4px; padding: 4px; border-radius: 999px; background: var(--surface-inverse); box-shadow: var(--shadow-lg); }
+.pv-pill a { display: inline-flex; align-items: center; gap: 6px; min-height: 36px; padding: 0 14px; border-radius: 999px; color: var(--ink-inverse); text-decoration: none; font: 600 14px/1 var(--font-text); }
+.pv-pill a:hover { background: var(--surface-inverse-raised); color: var(--ink-inverse); }
+.pv-pill .te-icon { font-size: 18px; }
+@media print { .pv-pill { display: none; } }
+
+.pv-top { position: relative; overflow: hidden; isolation: isolate; background: var(--surface-inverse); color: var(--ink-inverse); }
+.pv-top::after { content: ""; position: absolute; z-index: -1; top: 0; bottom: 0; right: 14%; width: 220px; background: var(--navy-800); transform: skewX(-14deg); }
+.pv-top__inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 20px; }
+.pv-badge { display: inline-flex; align-items: center; height: 28px; padding: 0 12px; border: 1px solid var(--line-inverse); border-radius: 999px; font: 600 13px/1 var(--font-text); color: var(--ink-inverse-muted); }
+.pv-hero { display: flex; flex-direction: column; gap: 16px; padding-block: 28px 56px; }
+.pv-hero h1 { margin: 0; max-width: 16ch; font: 700 48px/52px var(--font-display); color: var(--ink-inverse); }
+.pv-hero p { margin: 0; max-width: 62ch; font: 400 18px/28px var(--font-text); color: var(--ink-inverse-muted); }
+.pv-hero .pv-note { font-size: 14px; line-height: 20px; }
+.pv-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
+.pv-main { display: flex; flex-direction: column; gap: 44px; padding-block: 48px 72px; }
+.pv-main h2 { margin: 0 0 14px; font: 700 26px/32px var(--font-display); }
+.pv-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+.pv-card { display: flex; flex-direction: column; gap: 8px; padding: 20px; border: 1px solid var(--line-strong); border-radius: var(--radius-lg); background: var(--surface); }
+.pv-card h3 { margin: 0; font: 600 19px/24px var(--font-display); }
+.pv-card p { flex: 1; margin: 0; font: 400 15px/22px var(--font-text); color: var(--ink-secondary); }
+.pv-card__links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.pv-flow { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; padding: 20px; border-radius: var(--radius-lg); background: var(--surface-sunken); }
+.pv-flow .te-icon { color: var(--ink-muted); font-size: 18px; }
+.pv-foot { padding-block: 24px 40px; border-top: 1px solid var(--line); font: 400 13px/18px var(--font-text); color: var(--ink-muted); }
+@media (max-width: 767px) { .pv-hero h1 { font-size: 34px; line-height: 38px; } }
+
+.pv-viewer { background: var(--surface-sunken); }
+.pv-v { display: grid; grid-template-columns: 300px minmax(0, 1fr); min-height: 100vh; }
+.pv-v__side { display: flex; flex-direction: column; gap: 14px; padding: 24px; background: var(--surface); border-right: 1px solid var(--line); }
+.pv-v__side h1 { margin: 0; font: 700 24px/30px var(--font-display); }
+.pv-v__nav { display: flex; flex-direction: column; gap: 2px; }
+.pv-v__nav a { display: flex; align-items: center; min-height: 40px; padding: 0 12px; border-radius: var(--radius-sm); color: var(--ink); text-decoration: none; font: 500 15px/20px var(--font-text); }
+.pv-v__nav a:hover { background: var(--surface-sunken); }
+.pv-v__nav a[aria-current="page"] { background: var(--action-soft); color: var(--action); font-weight: 600; }
+.pv-back { display: inline-flex; align-items: center; gap: 6px; color: var(--ink-secondary); text-decoration: none; font: 500 14px/20px var(--font-text); }
+.pv-tip { margin: 0; font: 400 13px/18px var(--font-text); color: var(--ink-muted); }
+.pv-v__stage { display: flex; justify-content: center; align-items: flex-start; padding: 24px; overflow: hidden; }
+.pv-phone { box-sizing: content-box; flex-shrink: 0; width: 390px; height: 844px; border: 12px solid var(--navy-950); border-radius: 48px; background: var(--navy-950); box-shadow: var(--shadow-lg); overflow: hidden; transform-origin: top center; }
+.pv-phone iframe { display: block; width: 390px; height: 844px; border: 0; border-radius: 36px; background: #ffffff; }
+@media (max-width: 900px) { .pv-v { grid-template-columns: minmax(0, 1fr); } .pv-v__side { border-right: 0; border-bottom: 1px solid var(--line); } }

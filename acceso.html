@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Iniciar sesión · Todoeléctrico · Diseño</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Barlow+Semi+Condensed:wght@500;600;700&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,300..600,0..1,0&amp;display=block">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/bundle.css">
+<link rel="stylesheet" href="css/preview.css">
+</head>
+<body>
+<div style="background: var(--surface-sunken); color: var(--ink); font-family: var(--font-text)">
+  <div style="width: 100%; font-family: var(--font-text); color: var(--ink); background: var(--surface)">
+  <header class="te-on-dark">
+    <div class="te-topbar">
+      <div class="te-container te-topbar__inner">
+        <div class="te-topbar__group">
+          <span class="te-topbar__item"><span class="te-icon" aria-hidden="true">local_shipping</span><strong>Envío gratis</strong> desde 99 € en península</span>
+          <span class="te-topbar__item"><span class="te-icon" aria-hidden="true">schedule</span>Pide antes de las 14:00 y sale hoy</span>
+        </div>
+        <div class="te-topbar__group">
+          <a class="te-topbar__item" href="#"><span class="te-icon te-icon--fill" aria-hidden="true">star</span><strong>4,4/5</strong> en 5.278 opiniones</a>
+          <a class="te-topbar__item" href="contacto.html"><span class="te-icon" aria-hidden="true">storefront</span>Tienda en Alicante</a>
+          <a class="te-topbar__item" href="contacto.html"><span class="te-icon" aria-hidden="true">call</span>965 670 786</a>
+          <div class="te-seg te-seg--inverse" role="group" aria-label="Mostrar precios"><button type="button" aria-pressed="true">Con IVA</button><button type="button" aria-pressed="false">Sin IVA</button></div>
+          <a class="te-topbar__item" href="#">ES <span class="te-icon" aria-hidden="true" style="color: inherit">expand_more</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="te-header">
+      <div class="te-container te-header__inner">
+        <a class="te-header__logo" href="inicio.html" aria-label="Todoeléctrico, inicio"><img src="img/todoelectrico-logo-reverse.png" alt="Todoeléctrico" width="132" height="41"></a>
+        <form class="te-search te-header__search" role="search">
+          <input class="te-search__input" type="search" placeholder="Busca por producto, marca o referencia" aria-label="Buscar">
+          <button class="te-search__btn" type="submit" aria-label="Buscar"><span class="te-icon" aria-hidden="true">search</span></button>
+        </form>
+        <nav class="te-header__actions" aria-label="Tu cuenta">
+          <a class="te-haction" href="profesionales.html"><span class="te-icon" aria-hidden="true">workspace_premium</span><span class="te-haction__text">¿Eres instalador?<strong>Profesionales</strong></span></a>
+          <a class="te-haction" href="acceso.html"><span class="te-icon" aria-hidden="true">person</span><span class="te-haction__text">Hola, identifícate<strong>Mi cuenta</strong></span></a>
+          <a class="te-haction" href="carrito.html"><span class="te-icon" aria-hidden="true">shopping_cart</span><span class="te-count">3</span><span class="te-haction__text">Carrito<strong>67,99 €</strong></span></a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <nav class="te-nav" aria-label="Categorías">
+    <div class="te-container te-nav__inner">
+      <a class="te-nav__all" href="menu.html" style="text-decoration: none"><span class="te-icon" aria-hidden="true">menu</span>Todas las categorías</a>
+      <a class="te-nav__link" href="categoria.html">Gases refrigerantes</a>
+      <a class="te-nav__link" href="#">Climatización</a>
+      <a class="te-nav__link" href="#">Iluminación</a>
+      <a class="te-nav__link" href="#">Mecanismos</a>
+      <a class="te-nav__link" href="#">Cables</a>
+      <a class="te-nav__link" href="#">Canalización</a>
+      <a class="te-nav__link" href="#">Cuadros y protección</a>
+      <a class="te-nav__link" href="#">Teleco y domótica</a>
+      <a class="te-nav__link te-nav__link--sale" href="#">Outlet</a>
+    </div>
+  </nav>
+</div>
+
+  <main class="te-container" style="padding-block: 48px 72px">
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; max-width: 1040px; margin: 0 auto">
+      <section aria-labelledby="ac-login" style="display: flex; flex-direction: column; gap: 18px; padding: 36px; border-radius: 12px; background: var(--surface); box-shadow: var(--shadow-sm)">
+        <div><h1 class="type-h2" id="ac-login">Inicia sesión</h1><p style="margin-top: 4px; font-size: 15px; line-height: 22px; color: var(--ink-secondary)">Para ver tus pedidos, facturas y direcciones.</p></div>
+        <div class="te-field"><label class="te-field__label" for="ac-email">Correo electrónico</label><input class="te-input" id="ac-email" type="email" autocomplete="email" value="laura.gomez@ejemplo.es"></div>
+        <div class="te-field">
+          <div style="display: flex; justify-content: space-between; align-items: baseline"><label class="te-field__label" for="ac-pass">Contraseña</label><a class="te-link" href="#" style="font-size: 14px">¿La has olvidado?</a></div>
+          <div class="te-inputwrap"><input class="te-input" id="ac-pass" type="password" autocomplete="current-password" value="contraseña" style="padding-left: 14px; padding-right: 52px"><span class="te-inputwrap__end"><button class="te-iconbtn" type="button" aria-label="Mostrar contraseña"><span class="te-icon" aria-hidden="true">visibility</span></button></span></div>
+        </div>
+        <label class="te-check" style="font-size: 15px"><input type="checkbox" checked> Mantener la sesión iniciada</label>
+        <a class="te-btn te-btn--primary te-btn--lg te-btn--block" href="cuenta.html">Entrar</a>
+        <p style="display: flex; gap: 8px; padding-top: 16px; border-top: 1px solid var(--line); font-size: 14px; line-height: 20px; color: var(--ink-secondary)"><span class="te-icon te-icon--sm" aria-hidden="true" style="color: var(--action)">shopping_bag</span>No necesitas cuenta para comprar: puedes pagar como invitado y crearla después.</p>
+      </section>
+
+      <section aria-labelledby="ac-new" style="display: flex; flex-direction: column; gap: 18px; padding: 36px; border-radius: 12px; background: var(--surface); box-shadow: var(--shadow-sm)">
+        <div><h2 class="type-h2" id="ac-new">¿Eres nuevo? Crea tu cuenta</h2><p style="margin-top: 4px; font-size: 15px; line-height: 22px; color: var(--ink-secondary)">Es gratis y tardas menos de un minuto.</p></div>
+        <ul class="te-perks">
+          <li><span class="te-icon" aria-hidden="true" style="color: var(--success)">check_circle</span><span>Sigue tus envíos y descarga las facturas</span></li>
+          <li><span class="te-icon" aria-hidden="true" style="color: var(--success)">check_circle</span><span>Guarda direcciones de casa y de obra</span></li>
+          <li><span class="te-icon" aria-hidden="true" style="color: var(--success)">check_circle</span><span>Repite un pedido anterior con un clic</span></li>
+        </ul>
+        <div class="te-field">
+          <span class="te-field__label" id="ac-type">Te registras como</span>
+          <div class="te-seg" role="group" aria-labelledby="ac-type" style="align-self: flex-start"><button type="button" aria-pressed="true">Particular</button><button type="button" aria-pressed="false">Profesional o empresa</button></div>
+        </div>
+        <a class="te-btn te-btn--secondary te-btn--lg te-btn--block" href="#">Crear cuenta</a>
+        <div class="te-on-dark" style="position: relative; overflow: hidden; isolation: isolate; display: flex; flex-direction: column; gap: 8px; margin-top: auto; padding: 20px; border-radius: 8px; background: var(--surface-inverse); color: var(--ink-inverse)">
+          <span style="position: absolute; z-index: -1; top: -20%; bottom: -20%; right: 8%; width: 70px; background: var(--navy-800); transform: skewX(-14deg)"></span>
+          <span class="te-flag te-flag--pro" style="align-self: flex-start">Profesionales</span>
+          <p style="font: 600 18px/24px var(--font-display)">¿Instalador o empresa?</p>
+          <p style="font-size: 14px; line-height: 20px; color: var(--ink-inverse-muted)">Date de alta con tu CIF y el modelo 036 o 037. Verás los precios sin IVA y tendrás condiciones para obra.</p>
+          <a class="te-link te-link--inverse" href="profesionales.html" style="font-weight: 600">Ver ventajas para profesionales</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <div style="width: 100%; font-family: var(--font-text); color: var(--ink-inverse-muted); background: var(--surface-inverse)">
+  <footer class="te-footer te-on-dark">
+    <div class="te-container te-footer__top">
+      <div class="te-footer__contact">
+        <img src="img/todoelectrico-logo-reverse.png" alt="Todoeléctrico" width="132" height="41">
+        <p>Material eléctrico de electricista a electricista, desde 2008.</p>
+        <a class="te-footer__phone" href="contacto.html">965 670 786</a>
+        <p class="te-footer__line"><span class="te-icon" aria-hidden="true">schedule</span><span>Lun–jue 8:00–14:00 y 15:00–17:00<br>Viernes 8:00–14:00</span></p>
+        <p class="te-footer__line"><span class="te-icon" aria-hidden="true">chat</span><a href="#">WhatsApp 640 753 458</a></p>
+        <p class="te-footer__line"><span class="te-icon" aria-hidden="true">mail</span><a href="#">info@todoelectrico.es</a></p>
+        <p class="te-footer__line"><span class="te-icon" aria-hidden="true">location_on</span><span>Calle Yunque 27, 03690 San Vicente del Raspeig (Alicante)</span></p>
+      </div>
+      <nav aria-label="Comprar">
+        <p class="te-footer__title">Comprar</p>
+        <ul class="te-footer__links">
+          <li><a href="categoria.html">Gases refrigerantes</a></li>
+          <li><a href="#">Climatización</a></li>
+          <li><a href="#">Iluminación</a></li>
+          <li><a href="#">Mecanismos</a></li>
+          <li><a href="#">Cables y mangueras</a></li>
+          <li><a href="#">Cuadros y protección</a></li>
+          <li><a href="#">Outlet</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Ayuda">
+        <p class="te-footer__title">Ayuda</p>
+        <ul class="te-footer__links">
+          <li><a href="#">Envíos y devoluciones</a></li>
+          <li><a href="#">Formas de pago</a></li>
+          <li><a href="#">Condiciones de compra</a></li>
+          <li><a href="cuenta.html">Seguimiento de pedido</a></li>
+          <li><a href="#">Preguntas frecuentes</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Todoeléctrico">
+        <p class="te-footer__title">Todoeléctrico</p>
+        <ul class="te-footer__links">
+          <li><a href="#">Sobre nosotros</a></li>
+          <li><a href="profesionales.html">Profesionales</a></li>
+          <li><a href="#">Distribuidores</a></li>
+          <li><a href="#">Guías y blog</a></li>
+          <li><a href="contacto.html">Tienda en Alicante</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="te-container">
+      <div class="te-footer__mid">
+        <div class="te-paylogos" aria-label="Formas de pago"><span class="te-paylogo">VISA</span><span class="te-paylogo">Mastercard</span><span class="te-paylogo">Bizum</span><span class="te-paylogo">PayPal</span><span class="te-paylogo">seQura</span><span class="te-paylogo">Transferencia</span></div>
+        <span style="display: inline-flex; align-items: center; gap: 8px; color: var(--ink-inverse)"><span class="te-icon te-icon--fill" aria-hidden="true" style="color: var(--buy)">star</span><strong>4,4/5</strong><span style="color: var(--ink-inverse-muted)">en 5.278 opiniones · Opiniones Verificadas</span></span>
+        <span style="display: flex; gap: 18px"><a href="#">Facebook</a><a href="#">Instagram</a><a href="#">YouTube</a><a href="#">LinkedIn</a></span>
+      </div>
+    </div>
+    <div class="te-footer__bottom">
+      <div class="te-container te-footer__bottom-inner">
+        <span>© 2026 Todoeléctrico Suministros e Instalaciones S.L. · CIF B54685144</span>
+        <span class="te-footer__legal"><a href="#">Aviso legal</a><a href="#">Privacidad</a><a href="#">Cookies</a><a href="#">Configurar cookies</a></span>
+      </div>
+    </div>
+  </footer>
+</div>
+</div>
+<nav class="pv-pill" aria-label="Navegación del diseño"><a href="index.html"><span class="te-icon" aria-hidden="true">apps</span>Todas las pantallas</a></nav>
+</body>
+</html>
